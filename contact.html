@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — James Udoakah</title>
-  <link rel="stylesheet" crossorigin href="./assets/style-COfwRjon.css">
+  <link rel="stylesheet" crossorigin href="/James.I.Udoakahportfolio/assets/style-CegNpHSF.css">
 </head>
 <body>
 
@@ -52,38 +52,34 @@
       </div>
 
       <div class="contact-right fade-in">
-        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
-          <input type="hidden" name="access_key" value="28728092-af28-436d-8ead-31ef48b0f44f">
-          <input type="hidden" name="subject" value="New message from jamesudoakah.com">
-          <input type="hidden" name="from_name" value="James Udoakah Portfolio">
-
+        <form id="contactForm" novalidate>
           <div class="form-group">
             <label for="nameInput" class="form-label">Name</label>
-            <input type="text" id="nameInput" name="name" class="form-field" placeholder="Your name">
+            <input type="text" id="nameInput" class="form-field" placeholder="Your name">
             <span class="error-msg" id="nameError"></span>
           </div>
           <div class="form-group">
             <label for="emailInput" class="form-label">Email Address</label>
-            <input type="email" id="emailInput" name="email" class="form-field" placeholder="your@email.com">
+            <input type="email" id="emailInput" class="form-field" placeholder="your@email.com">
             <span class="error-msg" id="emailError"></span>
           </div>
           <div class="form-group">
             <label for="phoneInput" class="form-label">Phone Number</label>
-            <input type="tel" id="phoneInput" name="phone" class="form-field" placeholder="Digits only, e.g. 08012345678">
+            <input type="tel" id="phoneInput" class="form-field" placeholder="Digits only, e.g. 08012345678">
             <span class="error-msg" id="phoneError"></span>
           </div>
           <div class="form-group">
             <label for="msgInput" class="form-label">Message</label>
-            <textarea id="msgInput" name="message" class="form-field form-textarea" rows="5" placeholder="What's on your mind?"></textarea>
+            <textarea id="msgInput" class="form-field form-textarea" rows="5" placeholder="What's on your mind?"></textarea>
             <span class="error-msg" id="msgError"></span>
           </div>
-          <button type="submit" class="btn-pill btn-pill-full btn-pill-lg" id="sendBtn">Send Message →</button>
+          <button type="submit" class="btn-pill btn-pill-full btn-pill-lg">Send Message →</button>
         </form>
 
         <div class="form-success" id="formSuccess" style="display:none;">
           <div class="success-icon">✓</div>
-          <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem;">Message sent.</h3>
-          <p style="color: var(--muted);">Thanks for reaching out — I'll get back to you soon.</p>
+          <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem;">Message validated.</h3>
+          <p style="color: var(--muted);">In a real deployment this would now send. Your message was received and validated successfully.</p>
         </div>
       </div>
     </div>
