@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — James Udoakah</title>
+  <link rel="stylesheet" crossorigin href="/assets/style-CEvs0d-a.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-wrap">
+      <a href="index.html" class="nav-brand" aria-label="Home">◄</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-item">{home}</a></li>
+        <li class="nav-sep" aria-hidden="true">•</li>
+        <li><a href="about.html" class="nav-item">{about.me}</a></li>
+        <li class="nav-sep" aria-hidden="true">•</li>
+        <li><a href="projects.html" class="nav-item">{projects}</a></li>
+        <li class="nav-sep" aria-hidden="true">•</li>
+        <li><a href="planner.html" class="nav-item">{planner}</a></li>
+      </ul>
+      <a href="contact.html" class="nav-contact-btn">CONTACT&nbsp;→</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main style="padding-top: 10rem;">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <span class="section-label reveal-up" style="--delay:0s">// Contact</span>
+        <h1 class="page-title reveal-up" style="--delay:0.1s">Say something.</h1>
+        <h2 class="reveal-up" style="--delay:0.2s; font-family: var(--font-display); font-size: clamp(2rem, 6vw, 4rem); color: var(--muted);">I actually reply.</h2>
+        <p class="reveal-up" style="--delay:0.3s; font-size: 1.125rem; color: var(--muted); margin-top: 1.5rem; max-width: 500px;">Whether it's a role, a collab, or a question about anything on this site — drop a message below.</p>
+
+        <div class="contact-stats reveal-up" style="--delay:0.4s">
+          <div class="contact-stat">
+            <strong>24h</strong>
+            <span>Reply time</span>
+          </div>
+          <div class="contact-stat">
+            <strong>0</strong>
+            <span>Spam accepted</span>
+          </div>
+          <div class="contact-stat">
+            <strong>100%</strong>
+            <span>Messages read</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right fade-in">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="28728092-af28-436d-8ead-31ef48b0f44f">
+          <input type="hidden" name="subject" value="New message from jamesudoakah.com">
+          <input type="hidden" name="from_name" value="James Udoakah Portfolio">
+
+          <div class="form-group">
+            <label for="nameInput" class="form-label">Name</label>
+            <input type="text" id="nameInput" name="name" class="form-field" placeholder="Your name">
+            <span class="error-msg" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="emailInput" class="form-label">Email Address</label>
+            <input type="email" id="emailInput" name="email" class="form-field" placeholder="your@email.com">
+            <span class="error-msg" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phoneInput" class="form-label">Phone Number</label>
+            <input type="tel" id="phoneInput" name="phone" class="form-field" placeholder="Digits only, e.g. 08012345678">
+            <span class="error-msg" id="phoneError"></span>
+          </div>
+          <div class="form-group">
+            <label for="msgInput" class="form-label">Message</label>
+            <textarea id="msgInput" name="message" class="form-field form-textarea" rows="5" placeholder="What's on your mind?"></textarea>
+            <span class="error-msg" id="msgError"></span>
+          </div>
+          <button type="submit" class="btn-pill btn-pill-full btn-pill-lg" id="sendBtn">Send Message →</button>
+        </form>
+
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="success-icon">✓</div>
+          <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem;">Message sent.</h3>
+          <p style="color: var(--muted);">Thanks for reaching out — I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">james udoakah<span>.</span></div>
+      <div class="footer-copy">
+        <span>© 2026</span>
+        <span class="footer-sep">·</span>
+        <span>Software Engineering, Year 1</span>
+        <span class="footer-sep">·</span>
+        <span>Built in plain HTML, CSS & JavaScript</span>
+      </div>
+      <a href="contact.html" class="btn-pill btn-pill-sm">Get in touch →</a>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planner — James Udoakah</title>
+  <link rel="stylesheet" crossorigin href="/assets/style-CEvs0d-a.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-wrap">
+      <a href="index.html" class="nav-brand" aria-label="Home">◄</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-item">{home}</a></li>
+        <li class="nav-sep" aria-hidden="true">•</li>
+        <li><a href="about.html" class="nav-item">{about.me}</a></li>
+        <li class="nav-sep" aria-hidden="true">•</li>
+        <li><a href="projects.html" class="nav-item">{projects}</a></li>
+        <li class="nav-sep" aria-hidden="true">•</li>
+        <li><a href="planner.html" class="nav-item">{planner}</a></li>
+      </ul>
+      <a href="contact.html" class="nav-contact-btn">CONTACT&nbsp;→</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="section-label reveal-up" style="--delay:0s">// Academic Planner</span>
+      <h1 class="page-title reveal-up" style="--delay:0.1s">Deadlines don't<br>manage themselves.</h1>
+      <p class="reveal-up" style="--delay:0.2s; font-size: 1.125rem; color: var(--muted); max-width: 600px; margin-top: 1.5rem;">Add a task, tag it with a course, mark it done. Everything below is handled in-browser with JavaScript — no server, no database.</p>
+    </section>
+
+    <div class="stats-band fade-in" style="margin-bottom: 4rem;">
+      <div class="stat-item">
+        <span class="stat-val" id="statTotal">0</span>
+        <span class="stat-lab">Total Tasks</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-val" id="statPending">0</span>
+        <span class="stat-lab">Pending</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-val" id="statDone">0</span>
+        <span class="stat-lab">Completed</span>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top: 0;">
+      <div style="max-width: 800px; margin: 0 auto;" class="fade-in">
+
+        <div class="task-input-row">
+          <input type="text" id="taskInput" class="task-field" placeholder="e.g. Finish COS 106 term project" autocomplete="off">
+          <select id="courseInput" class="task-select">
+            <option value="General">General</option>
+            <option value="COS 101">COS 101</option>
+            <option value="COS 106">COS 106</option>
+            <option value="MTH 101">MTH 101</option>
+            <option value="PHY 101">PHY 101</option>
+            <option value="STA 111">STA 111</option>
+            <option value="GST 111">GST 111</option>
+          </select>
+          <button id="addTaskBtn" class="btn-pill">+ Add Task</button>
+        </div>
+
+        <p id="emptyState" style="display: none; color: var(--muted); font-size: 1rem; padding: 2rem 0; text-align: center;">No tasks yet — add your first one above.</p>
+
+        <ul id="taskList" style="list-style: none; margin-top: 1.5rem;"></ul>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">james udoakah<span>.</span></div>
+      <div class="footer-copy">
+        <span>© 2026</span>
+        <span class="footer-sep">·</span>
+        <span>Software Engineering, Year 1</span>
+        <span class="footer-sep">·</span>
+        <span>Built in plain HTML, CSS & JavaScript</span>
+      </div>
+      <a href="contact.html" class="btn-pill btn-pill-sm">Get in touch →</a>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>
