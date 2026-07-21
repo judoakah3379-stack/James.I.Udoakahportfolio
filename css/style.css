@@ -2,12 +2,6 @@
 
 /* ─── Local custom fonts ────────────────────────────────────── */
 @font-face {
-  font-family: 'FinalLap';
-  src: url('../fonts/FinalLap.ttf') format('truetype');
-  font-weight: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: 'AnimeAce';
   src: url('../fonts/AnimeAce.ttf') format('truetype');
   font-weight: 400;
@@ -593,15 +587,17 @@ a {
 }
 .hd-item--sound {
   color: var(--lime);
-  font-family: 'FinalLap', monospace;
+  font-family: 'Space Grotesk', var(--font-sans);
+  font-weight: 700;
   font-size: clamp(0.8rem, 1.4vw, 1.05rem);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
 }
 .hd-item--lead {
   color: var(--lime);
-  font-family: 'FinalLap', monospace;
+  font-family: 'Space Grotesk', var(--font-sans);
+  font-weight: 700;
   font-size: clamp(0.8rem, 1.4vw, 1.05rem);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
 }
 
 .hero-desc {
@@ -676,12 +672,13 @@ a {
   bottom: 3.5rem;
   left: 1.75rem;
   right: 1.75rem;
-  font-family: 'FinalLap', monospace;
+  font-family: 'Space Grotesk', var(--font-sans);
+  font-weight: 700;
   font-size: clamp(2rem, 5vw, 3.2rem);
   line-height: 1.05;
   color: #ffffff;
   text-shadow: 0 0 40px rgba(255,255,255,0.3), 0 2px 8px rgba(0,0,0,0.8);
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
   margin: 0;
 }
 
