@@ -1,0 +1,19 @@
+{
+  "name": "@workspace/udini-portfolio",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.config.ts --host 0.0.0.0",
+    "build": "vite build --config vite.config.ts",
+    "serve": "vite preview --config vite.config.ts --host 0.0.0.0",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@replit/vite-plugin-cartographer": "latest",
+    "@replit/vite-plugin-dev-banner": "latest",
+    "@replit/vite-plugin-runtime-error-modal": "latest",
+    "@types/node": "latest",
+    "vite": "latest"
+  }
+}
